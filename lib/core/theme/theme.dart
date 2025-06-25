@@ -5,7 +5,17 @@ class AppTheme {
     brightness: Brightness.light,
     fontFamily: 'Poppins',
     // app Bar Theme
-    appBarTheme: AppBarTheme(),
+    appBarTheme: AppBarTheme(
+      backgroundColor: Colors.white,
+      foregroundColor: Colors.black, // Text color
+      elevation: 0, // No shadow
+      iconTheme: IconThemeData(color: Colors.black), // Icon color
+      titleTextStyle: TextStyle(
+        color: Colors.black,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
     //textTheme
     textTheme: TextTheme(
       titleLarge: TextStyle(),
@@ -14,7 +24,7 @@ class AppTheme {
       headlineLarge: TextStyle(),
       headlineMedium: TextStyle(),
       headlineSmall: TextStyle(),
-      bodyLarge: TextStyle(),
+      bodyLarge: TextStyle(fontSize: 22, color: Colors.black),
       bodyMedium: TextStyle(),
       bodySmall: TextStyle(),
     ),
@@ -38,7 +48,17 @@ class AppTheme {
     brightness: Brightness.dark,
     fontFamily: 'Poppins',
     // app Bar Theme
-    appBarTheme: AppBarTheme(),
+    appBarTheme: AppBarTheme(
+      backgroundColor: Colors.black,
+      foregroundColor: Colors.white, // Text color
+      elevation: 0, // No shadow
+      iconTheme: IconThemeData(color: Colors.white), // Icon color
+      titleTextStyle: TextStyle(
+        color: Colors.white,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
     //textTheme
     textTheme: TextTheme(
       titleLarge: TextStyle(),
@@ -47,7 +67,7 @@ class AppTheme {
       headlineLarge: TextStyle(),
       headlineMedium: TextStyle(),
       headlineSmall: TextStyle(),
-      bodyLarge: TextStyle(),
+      bodyLarge: TextStyle(fontSize: 22, color: Colors.white),
       bodyMedium: TextStyle(),
       bodySmall: TextStyle(),
     ),
